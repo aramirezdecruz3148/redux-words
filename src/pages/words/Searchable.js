@@ -12,5 +12,5 @@ export default function Searchable({ match }) {
 }
 
 Searchable.propTypes = {
-  match: PropTypes.func.isRequired
+  match: PropTypes.object.isRequired
 };
