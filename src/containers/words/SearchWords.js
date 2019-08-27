@@ -6,11 +6,8 @@ const mapStateToProps = state => ({ state });
 
 const mapDispatchToProps = dispatch => ({
   handleOnChange({ target }) {
+    console.log(target.value)
     dispatch(getSearchTerm(target.value));
-  },
-  handleOnSubmit(event) {
-    event.preventDefault();
-    //I think getTopWordsByTerm will go here
   }
 });
 

@@ -4,3 +4,4 @@ import words from './wordsReducer';
 export default combineReducers({
   words
 });
+

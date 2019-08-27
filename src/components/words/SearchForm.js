@@ -1,22 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SearchForm({ handleOnSubmit, searchTerm, handleOnChange }) {
+function SearchForm({ searchTerm, handleOnChange }) {
   return (
-    <form onSubmit={handleOnSubmit}>
-      <input 
-        type='text' 
-        value={searchTerm} 
-        name='searchTerm' 
-        onChange={handleOnChange} 
-      />\
-      <button>Search 🔍</button>
-    </form>
+    <input 
+      type='text' 
+      value={searchTerm} 
+      name='searchTerm' 
+      placeholder='🔍'
+      onChange={handleOnChange} 
+    />
   );
 }
 
 SearchForm.propTypes = {
-  handleOnSubmit: PropTypes.func.isRequired,
   searchTerm: PropTypes.string.isRequired,
   handleOnChange: PropTypes.func.isRequired
 };
