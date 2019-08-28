@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Words component renders Words 1`] = `
+<ul>
+  <li
+    key="a"
+  >
+    <h3>
+      a
+    </h3>
+  </li>
+  <li
+    key="string"
+  >
+    <h3>
+      string
+    </h3>
+  </li>
+</ul>
+`;
