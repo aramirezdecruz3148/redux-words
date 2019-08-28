@@ -3,8 +3,9 @@ import SearchForm from '../../components/words/SearchForm';
 import { getSearchTerm } from '../../selectors/wordsSelectors';
 import { updateSearchTerm } from '../../actions/wordsActions';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state, /*props*/) => ({
   searchTerm: getSearchTerm(state)
+  // props.history.push(`/?query=${searchTerm}`)
 });
 
 const mapDispatchToProps = dispatch => ({
